@@ -1,6 +1,17 @@
+2003-11-28  Tim Jenness  <timj@jach.hawaii.edu>
+
+	* Release v0.04 to CPAN
+
+2002-11-13  Tim Jenness  <t.jenness@jach.hawaii.edu>
+
+	* PassGen.pm (_tot_to_index): Handle the case where no index
+	matches (ie the combination does not exist in the frequency file)
+
 2002-10-05  Tim Jenness  <t.jenness@jach.hawaii.edu>
 
-	* PassGen.pm: Construct default frequency file using File::Spec
+	* Release v0.03 to CPAN
+
+	* PassGen.pm: Construct default frequency file name using File::Spec
 
 	* Makefile.PL: Fix PREREQ_PM so that it works correctly with
 	CPAN.pm (undef version number is not supported) [thanks to Florian
