@@ -40,7 +40,7 @@ use vars qw/ $VERSION @ISA @EXPORT_OK $DEFAULT_DICT $DEFAULT_FREQFILE
   $ERRSTR
   /;
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use constant MAXN => 32000;
 require Exporter;
@@ -410,7 +410,7 @@ sub _scale_first_down {
 
 # Divide everything in a 2-D array by 2
 
-sub _scale_second_down {
+sub _scale_seconds_down {
   use integer;
   my $arr = shift;
   for my $i (@$arr) {
@@ -422,7 +422,7 @@ sub _scale_second_down {
 
 # Divide everything in a 3-D array by 2.0
 
-sub _scale_third_down {
+sub _scale_thirds_down {
   use integer;
   my $arr = shift;
   for my $i (@$arr) {

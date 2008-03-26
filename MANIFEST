@@ -4,3 +4,4 @@ Makefile.PL
 t/passgen.t
 MANIFEST
 ChangeLog
+META.yml                                 Module meta-data (added by MakeMaker)

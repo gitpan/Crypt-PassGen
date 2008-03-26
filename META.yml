@@ -1,0 +1,16 @@
+--- #YAML:1.0
+name:                Crypt-PassGen
+version:             0.05
+abstract:            Generate a random password that looks like a real word
+license:             ~
+author:              
+    - Tim Jenness <t.jenness@jach.hawaii.edu>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    File::Spec:                    0
+    Storable:                      0
+    Test:                          0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
