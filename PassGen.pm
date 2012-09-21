@@ -40,7 +40,7 @@ use vars qw/ $VERSION @ISA @EXPORT_OK $DEFAULT_DICT $DEFAULT_FREQFILE
   $ERRSTR
   /;
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use constant MAXN => 32000;
 require Exporter;
@@ -314,7 +314,7 @@ sub _generate ($$) {
   my $n = 0;
   my $word;
 
-  WORDLOOP: while ($score < $minscore) {
+  WORDLOOP: while ($score < $minscore || length($word) < $nlett) {
 
     # reset current score
     $score = 0;
@@ -538,8 +538,8 @@ return an error state and contains the reason for the error.
 
 =head1 AUTHORS
 
-Tim Jenness E<lt>t.jenness@jach.hawaii.eduE<gt> Copyright (C)
-2000-2001 T. Jenness. All Rights Reserved.  This program is free
+Tim Jenness E<lt>tjenness@cpan.orgE<gt> Copyright (C)
+2000-2012 T. Jenness. All Rights Reserved.  This program is free
 software; you can redistribute it and/or modify it under the same
 terms as Perl itself.
 
